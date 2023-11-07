@@ -1,0 +1,10 @@
+body {
+    background-color: #f8f9fa; /* Set a light background color */
+}
+
+.gradient-bg {
+    background: linear-gradient(45deg,#FF6F61, #F39C12, #2ECC71); /* Set your gradient colors */
+    border-radius: 10px; /* Add rounded corners */
+    padding: 20px; /* Add some padding for better visual appeal */
+    color: #fff; /* Set text color to white for better contrast */
+}
