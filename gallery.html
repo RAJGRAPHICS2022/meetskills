@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Babbage</title>
+    <style>
+        /* ... (Same CSS styles as before) ... */
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            overflow-y: auto;
+            max-height: 80%;
+        }
+
+        #close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        img {
+            cursor: pointer;
+        }
+
+        h1 {
+            color: #4285f4;
+        }
+    </style>
+</head>
+<body>
+   <!-- <h1>Mark Zuckerberg</h1> -->
+
+    <!-- First Image -->
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjG7IUh9j908HCSRRU08_rc6VMelR6F8vMKPmeiYSOhcKzK10BzdBGco2-RaAfqjd9sjsdKolIWsj3Iv_u7l2ajf1yn2Bw0yw045c14FB2bMO6Bcz6vGtgZE0Ai0mqJKoKuEC9tCIBdyxdFp4cn7u2dQ0sgVCBLBgbYXr_JzvZX2_iU2JCCLtQYk5TZ5Q=s320" alt="Charles Babbage" onclick="openPopup(1)">
+<!--  <h1>Charles Babbage</h1>    -->
+  <!-- Second Image -->
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEioi-nhpEnIU6L-0SEgkbvhVgUVigYVg0UMYIWDOUGa51FxUvNyQMtBcRt0p0v1bjGqZx_RJcP0jxaY2amARatog7z7wk0gUSSJbYXKwPLNiPBVRVvyy6qib7WkNgB3E0vwTWmaefb8d3FLA3-MhYDoe_yyCHa0eWfRmOlBcZE5nTr1_8li_UjvQK_FFA=s320" alt="Charles Babbage" onclick="openPopup(2)">
+    
+    <!-- Third Image -->
+<!--  <h1>William Henry Gates</h1>   -->
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhgg1D0PZUD_MrUQCBwrIgdk1mbPAXCVw8xqvDiMtt9Tuyng7pT1o8MqMwQO7Pp_ZzudJEcaNA6nrv-ky9ZufWSU9yfkvNMyu_OKmSHiF-sUv53YOFQo1BxeNnlQnvVycacZtv4JLX5lOE9UWA7o1lsujbtrjelXC0Ls-TSMD3lyH8yPXfWRCIT75Q4aA=s320" alt="Description for Third Image" onclick="openPopup(3)">
+    
+    <!-- Fourth Image -->
+ <!-- <h1>Sundararajan Pichai</h1>  -->
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhXHQkNI5fPVDb3n8W-UwEsBPU_GyioLnRXMyVCgLDGDJd6Fvn1jYbwKlzU_d6jhnSQFkk3gCr8bzz3vnr-76So_EUCWwEBTai_aeVPTtHTVarsfn2paNrT9IyNpAaaYdOvhmvjUUXLI1tJNR69Zyk_mMiZ6Ny8wehrKqekx7kq2VXjdCZcrUq6xMuP5Q=s320" alt="Description for Fourth Image" onclick="openPopup(4)">
+
+   <!-- Popup for first Image -->
+    <div class="popup-container" id="popup1">
+      <div class="popup-content">
+            <span id="close-popup" onclick="closePopup()">&#10006;</span>
+            <ul>
+              <!-- Details about imagein apear in text box for first image -->
+              
+              <li><strong>Full Name:</strong> Mark Elliot Zuckerberg</li>
+            <li><strong>Father's Name:</strong> Edward Zuckerberg</li>
+            <li><strong>Mother's Name:</strong> Karen Kempner Zuckerberg</li>
+            <li><strong>Wife's Name:</strong> Priscilla Chan</li>
+            <li><strong>Schooling Details:</strong> Mark Zuckerberg attended Ardsley High School in New York before enrolling at Phillips Exeter Academy, a prestigious prep school. He later studied at Harvard University, where he started developing the idea for Facebook.</li>
+            <li><strong>Hobbies:</strong> Mark Zuckerberg has shown interests in various activities, including coding, running, and reading. He's known for his passion for technology and entrepreneurship, which has been a significant focus of his life.</li>
+            <li><strong>Experiences:</strong> Mark Zuckerberg is a co-founder of Facebook, one of the world's largest and most influential social media platforms. He started Facebook in 2004 while he was a student at Harvard, and it quickly grew into a global phenomenon. Under his leadership, Facebook expanded its reach and acquired Instagram and WhatsApp, making it a dominant force in the social media industry.</li>
+        </ul>
+        <p class="note">Present Life: As of my last knowledge update in September 2021, Mark Zuckerberg continued to play a pivotal role at Facebook, serving as the company's CEO and chairman. In addition to his role at Facebook, he and his wife, Priscilla Chan, have been involved in philanthropic efforts through the Chan Zuckerberg Initiative, focusing on areas like education, science, and healthcare. Please note that Mark Zuckerberg's activities and roles may have evolved since that time, so it's advisable to check the latest news for the most current information about him.</p>
+        </div>
+    </div>
+        <!-- Same popup structure as before -->
+     
+  
+  <!-- Popup for Second Image -->
+    <div class="popup-container" id="popup2">
+      <div class="popup-content">
+            <span id="close-popup" onclick="closePopup()">&#10006;</span>
+            <ul>
+              
+              <!-- Details about imagein apear in text box for Second image -->
+              
+                <li><strong>Full Name:</strong>Charles Babbage</li>
+                <li><strong>Father's Name:</strong> Benjamin Babbage</li>
+                <li><strong>Mother's Name:</strong> Betsy Plumleigh Teape</li>
+                <li><strong>Wife's Name:</strong> Georgiana Whitmore</li>
+                <li><strong>Schooling Details:</strong> Charles Babbage attended several prestigious schools during his early education, including King Edward VI Grammar School in Totnes and Holmwood Academy in Essex, England. Later, he enrolled at Trinity College, Cambridge, where he studied mathematics.</li>
+                <li><strong>Hobbies:</strong> Charles Babbage was primarily known for his passion for mathematics and mechanical engineering. His work on the design of calculating machines and his contributions to mathematics were central to his interests.</li>
+                <li><strong>Experiences:</strong> Charles Babbage is often referred to as the "father of the computer" for his groundbreaking work on the design of mechanical computers, particularly the Analytical Engine, which is considered a precursor to modern computers. His most famous invention, the "Difference Engine," was designed to perform complex mathematical calculations automatically. Babbage also developed the concept of a stored-program computer, an idea that laid the foundation for modern computing.</li>
+            </ul>
+            <p><strong>Present Life:</strong> Charles Babbage lived in the 19th century and passed away on October 18, 1871. He left a lasting legacy in the field of computer science and mathematics, with his inventions and concepts continuing to influence the development of computers and technology well into the 20th and 21st centuries. While he is no longer alive, his contributions to science and technology are celebrated and remembered to this day.</p>
+        </div>
+    </div>
+        <!-- Same popup structure as before -->
+    
+
+    <!-- Popup for Third Image -->
+    <div class="popup-container" id="popup3">
+      <div class="popup-content">
+            <span id="close-popup" onclick="closePopup()">&#10006;</span>
+            <ul>
+              
+              <!-- Details about imagein apear in text box for third image -->
+              
+                <li><strong>Full Name:</strong> William Henry Gates III</li>
+            <li><strong>Father's Name:</strong> William H. Gates Sr.</li>
+            <li><strong>Mother's Name:</strong> Mary Maxwell Gates</li>
+            <li><strong>Wife's Name:</strong> Melinda French Gates (formerly Melinda Ann French)</li>
+            <li><strong>Schooling Details:</strong> Bill Gates attended Lakeside School, a private preparatory school in Seattle, Washington. He later enrolled at Harvard University but dropped out in 1975 to pursue his passion for computer programming and software development.</li>
+            <li><strong>Hobbies:</strong> Bill Gates is known for his love of reading and is an avid book collector. He has also shown interest in playing bridge and has been involved in competitive bridge tournaments. Additionally, he is dedicated to philanthropy and spends a significant portion of his time and wealth on charitable activities.</li>
+            <li><strong>Experiences:</strong> Bill Gates is one of the most influential figures in the technology industry. He co-founded Microsoft, a multinational technology company, with Paul Allen in 1975. Microsoft's operating system, MS-DOS, and later, Windows, played a pivotal role in the personal computer revolution. Gates served as the CEO of Microsoft until 2000 and as chairman and chief software architect until 2006. He played a crucial role in shaping the software industry and became one of the world's wealthiest individuals.</li>
+        </ul>
+        <p class="note">Present Life: As of my last knowledge update in September 2021, Bill Gates had shifted his focus from day-to-day operations at Microsoft to philanthropy. He and his then-wife Melinda established the Bill & Melinda Gates Foundation, one of the world's largest charitable foundations. The foundation is dedicated to addressing global issues like health, education, poverty alleviation, and access to technology. However, please note that Bill and Melinda Gates announced their divorce in May 2021, and there may have been developments in his personal and professional life since then. For the most current information about Bill Gates, it's advisable to check the latest news and updates.</p>
+        </div>        
+    </div>
+        <!-- Replace with details for the third image -->
+   
+
+    <!-- Popup for Fourth Image -->
+    <div class="popup-container" id="popup4">
+      <div class="popup-content">
+            <span id="close-popup" onclick="closePopup()">&#10006;</span>
+            <ul>
+              
+              <!-- Details about imagein apear in text box for forth image -->
+              
+                <li><strong>Full Name:</strong> Pichai Sundararajan (Sundar Pichai)</li>
+            <li><strong>Father's Name:</strong> Regunatha Pichai</li>
+            <li><strong>Mother's Name:</strong> Lakshmi Pichai</li>
+            <li><strong>Wife's Name:</strong> Anjali Pichai</li>
+            <li><strong>Schooling Details:</strong> Sundar Pichai attended Padma Seshadri Bala Bhavan (PSBB) School in Chennai, India, known for its strong educational foundation. He excelled academically from a young age.</li>
+            <li><strong>Hobbies:</strong> Sundar Pichai has a reputation for being a technology enthusiast. His hobbies likely include staying updated on the latest tech trends, as well as reading and staying informed about various topics. He has a deep interest in soccer (football) and is a fan of FC Barcelona.</li>
+            <li><strong>Experiences:</strong> Sundar Pichai's professional journey began with a Bachelor's degree in Metallurgical Engineering from the Indian Institute of Technology (IIT) Kharagpur. Later, he pursued a Master's in Engineering from Stanford University and an MBA from the Wharton School at the University of Pennsylvania. He joined Google in 2004, where he played a pivotal role in the development of products like Google Chrome and Google Drive. Pichai's dedication and leadership led to his promotion as CEO of Google in 2015. In 2019, he took on the role of CEO of Alphabet Inc., Google's parent company, overseeing its various subsidiaries.</li>
+        </ul>
+        <p class="note">Note: Information is based on the last knowledge update in September 2021.</p>
+        </div>
+    </div>
+        <!-- Replace with details for the fourth image -->
+    
+
+    <script>
+        function openPopup(imageNumber) {
+            var popup = document.getElementById('popup' + imageNumber);
+            popup.style.display = 'block';
+        }
+
+        // Close the popups when clicking anywhere on the background
+        window.addEventListener('click', function(event) {
+            var popups = document.querySelectorAll('.popup-container');
+            for (var i = 0; i < popups.length; i++) {
+                if (event.target == popups[i]) {
+                    popups[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
